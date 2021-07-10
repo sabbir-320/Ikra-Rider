@@ -1,10 +1,8 @@
 import React from "react";
-import "./homePage.css";
-
-export default function Contact() {
+import "./contactPage.css";
+export default function ContactItem() {
   return (
-    <div className="contact-section" id="contact">
-      <div className="container">
+    <div className="contact-section">
         <div className="row">
           <div className="section-title">
             <h3>contact</h3>
@@ -51,16 +49,6 @@ export default function Contact() {
             <textarea placeholder="Your Massage"></textarea>
           </div>
         </div>
-      </div>
-      <footer>
-          <div className="container">
-              <div className="row">
-                  <div className="section-title">
-                  <h3>&copy; urban</h3>
-                  </div>
-              </div>
-          </div>
-      </footer>
     </div>
   );
 }

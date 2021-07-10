@@ -1,0 +1,81 @@
+/* contact section */
+.contact-section-container{
+    position: relative;
+}
+.contact-section-container-top{
+  padding: 50px 0 0;
+}
+.contact-section {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .contact-section .contact-cart {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+  }
+  .contact-section .contact-cart .cart {
+    background-color: #f1f1f1;
+    width: 100%;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  .contact-section .contact-cart .cart .cart-body {
+    text-align: center;
+  }
+  .contact-section .contact-cart .cart .cart-body i {
+    display: block;
+    color: #fb839e;
+  }
+  .contact-section .contact-cart .cart .cart-body span {
+    padding: 10px 0;
+    display: block;
+    font-weight: 500;
+  }
+  .contact-section .contact-content {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+  }
+  .contact-section .contact-content form {
+    width: 100%;
+  }
+  .contact-section .contact-content input {
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+  }
+  .contact-section .contact-content input[placeholder="Email"] {
+    margin: 30px 0;
+  }
+  .contact-section .contact-content textarea {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+
+  @media (max-width: 700px) {
+    .contact-section .contact-cart {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 5px 15px;
+    }
+    .contact-section .contact-content {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 15px;
+    }
+    .contact-section .contact-content textarea {
+      resize: vertical;
+    }
+    .contact-section footer {
+      position: initial;
+    }
+  }

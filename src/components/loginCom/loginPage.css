@@ -1,0 +1,129 @@
+.login-section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.login-section .login-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+.login-section .login-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+.login-section .login-content form{
+    max-width: 570px;
+    margin: auto;
+    padding: 20px 50px;
+    border: 1px solid #ABABAB;
+    border-radius: 5px;
+}
+.login-section .login-content form span{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color-1);
+}
+.login-section form input:not(input[type="checkbox"],input[type="submit"]){
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color-1);
+    border: none;
+    border-bottom: 1px solid #ABABAB;
+}
+.login-section form input:focus{
+    outline: none;
+}
+.login-section form input[type="checkbox"]{
+    margin-right: 5px;
+}
+.login-section form a{
+    text-decoration: underline;
+    color: var(--bg-color-1);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.login-section form input[type="submit"]{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 14px 0;
+    margin: 40px 0 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: var(--bg-color-1);
+    color: var(--text-color-3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-section form p{
+    text-align: center;
+    font-weight: 500;
+}
+
+.optional-login{
+    max-width: 570px;
+    margin: auto;
+}
+.optional-login p{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    color: var(--text-color-1);
+    padding: 30px 0;
+    position: relative;
+}
+.optional-login p::before,.optional-login p::after{
+    content: "";
+    position: absolute;
+    top: 39px;
+    width: 47%;
+    height: 1px;
+    background-color: #ABABAB;
+}
+.optional-login p::before{
+    left: 0;
+}
+.optional-login p::after{
+    right: 0;
+}
+.optional-login button{
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 16px 0;
+    background-color: transparent;
+    border: 1px solid #ABABAB;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color-1);
+    cursor: pointer;
+    position: relative;
+}
+.optional-login button.google{
+    margin-bottom: 10px;
+}
+.optional-login button.google::before, button.fb::before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+}
+.optional-login button.google::before{
+    background-image: url("./google.png");
+}
+.optional-login button.fb::before{
+    background-image: url("./facebook.png");
+}

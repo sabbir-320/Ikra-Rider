@@ -1,0 +1,30 @@
+.blog-container{
+  position: relative;
+}
+.blog-section-margin-top{
+   padding: 50px 0 20px;
+}
+.blog-section {
+    padding: 0 15px;
+  }
+  .blog-section .blog-content {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-bottom: 40px;
+  }
+  .blog-section .blog-content p {
+    padding-left: 30px;
+  }
+  @media (max-width: 700px) {
+    .blog-section .blog-content {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-bottom: 40px;
+    }
+    .blog-section .blog-content p {
+      padding-left: 0;
+    }
+    .blog-section .order {
+      order: 4;
+    }
+  }
